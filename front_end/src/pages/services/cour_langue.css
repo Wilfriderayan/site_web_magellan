@@ -1,0 +1,78 @@
+.niveaux-container {
+  padding: 80px 20px;
+}
+
+.niveau-card {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  margin-bottom: 100px;
+}
+
+.niveau-card.reverse {
+  flex-direction: row-reverse;
+}
+
+.niv-image {
+  flex: 1;
+}
+
+.niv-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 30px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+.niv-text {
+  flex: 1;
+}
+
+.badge {
+  background: #e1f0ff;
+  color: #0984e3;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.niv-text h2 {
+  font-size: 2.2rem;
+  margin: 15px 0;
+  color: #2d3436;
+}
+
+.niv-text ul {
+  list-style: none;
+  padding: 0;
+  margin: 25px 0;
+}
+
+.niv-text li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  color: #636e72;
+}
+
+.list-icon { color: #0984e3; }
+
+.btn-inscription {
+  background: #0984e3;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .niveau-card, .niveau-card.reverse {
+    flex-direction: column;
+    gap: 30px;
+  }
+}

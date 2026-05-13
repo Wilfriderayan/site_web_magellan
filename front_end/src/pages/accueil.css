@@ -1,0 +1,17 @@
+/* CSS pour la page d'accueil */
+.accueil-page {
+    min-height: 100vh;
+    background-color: #f8f9fa;
+}
+
+/* Espacement entre les sections */
+.accueil-page > * {
+    margin-bottom: 0;
+}
+
+/* Responsive pour mobile */
+@media (max-width: 768px) {
+    .accueil-page {
+        padding: 0;
+    }
+}

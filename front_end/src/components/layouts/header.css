@@ -1,0 +1,146 @@
+* {padding: 0;margin: 0;}
+body{margin: 0;padding: 0;}
+.preheader-wrapper { background: #f8f9fa; padding: 0; width: 100%; margin: 0; }
+.preheader-inner { display: flex; flex-direction: column; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; width: auto;}
+.preheader-left { min-width: 0; display: flex; flex-direction: column; }
+.preheader-label { font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #9ca3af; }
+
+/* Carrousel */
+.carousel-track-wrap { 
+  overflow: hidden; 
+  width: calc(200px * 2 + 8px * 1); /* 2 cartes + 1 espace */
+  max-width: 416px;
+}
+.carousel-track { display: flex; gap: 8px; transition: transform 1s cubic-bezier(.4,0,.2,1); }
+.agency-card { background: #fff; border-radius: 8px; padding: 8px 12px; display: flex; gap: 10px; min-width: 200px; max-width: 200px; flex-shrink: 0; }
+
+/* Points couleurs */
+.agency-dot { width: 8px; height: 8px; border-radius: 50%; margin-top: 4px; flex-shrink: 0; }
+.dot-cm  { background: #378ADD; }
+.dot-cm2 { background: #7F77DD; }
+.dot-td  { background: #1D9E75; }
+.dot-rca { background: #EF9F27; }
+.agency-city { font-size: 12px; font-weight: 600; color: #111827; }
+.agency-country { font-size: 10px; font-weight: 600; }
+.country-cm  { color: #185FA5; }
+.country-cm2 { color: #534AB7; }
+.country-td  { color: #0F6E56; }
+.country-rca { color: #854F0B; }
+.agency-address { font-size: 11px; color: #6b7280; }
+.agency-phone { font-size: 11px; color: #9ca3af; text-decoration: none; }
+.agency-phone:hover { color: #374151; }
+
+/* Dots de navigation */
+.carousel-dots { display: flex; gap: 4px; margin-top: 6px; }
+.dot { width: 16px; height: 3px; border-radius: 2px; background: #d1d5db; cursor: pointer; transition: all 0.3s; }
+.dot.active { width: 24px; background: #378ADD; }
+
+/* Droite */
+.preheader-right { display: flex; flex-direction: column; align-items: flex-end; gap: 6px; flex-shrink: 0; }
+.ph-citem { font-size: 11px; color: #6b7280; text-decoration: none; display: flex; align-items: center; gap: 5px; }
+.ph-citem:hover { color: #111827; }
+.preheader-socials { display: flex; gap: 5px; }
+.ph-soc { width: 26px; height: 26px; border-radius: 6px; background: #fff; display: flex; align-items: center; justify-content: center; font-size: 11px; color: #6b7280; text-decoration: none; }
+.ph-soc:hover { background: #f3f4f6; }
+.logo-area{
+    padding: 0;
+}
+.logo-area img {
+    width: 75%;
+    height: auto;
+}
+
+/*Header bottom*/
+.menus{
+    background: linear-gradient(135deg, rgba(115, 45, 45, 0.9) 0%, rgba(255, 85, 0, 0.95) 100%);
+}
+.nav-link{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s, text-decoration 1s, font-weight 0.3s, font-size 0.3s;
+}
+.nav-link:hover{
+    color: #FFD700;
+    text-decoration: underline;
+}
+/* Style personnalisé pour l'état actif */
+.nav-link.active {
+    background-color: rgba(255, 215, 0, 0.1) !important;
+    color: #FFD700 !important;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    position: relative;
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.1) 0%, rgba(255, 215, 0, 0.05) 100%);
+    border-radius: 8px;
+    padding: 8px 16px;
+    margin: 0 4px;
+    box-shadow: 0 2px 8px rgba(255, 215, 0, 0.2);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(-2px);
+}
+
+/* Effet de survol pour le lien actif */
+.nav-link.active:hover {
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.15) 0%, rgba(255, 215, 0, 0.08) 100%);
+    box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
+    transform: translateY(-3px) scale(1.02);
+}
+
+/* Animation d'entrée pour l'état actif */
+.nav-link.active::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #FFD700, #FFA500);
+    border-radius: 2px;
+    animation: slideIn 0.4s ease-out forwards;
+}
+
+@keyframes slideIn {
+    from {
+        width: 0;
+        opacity: 0;
+    }
+    to {
+        width: 80%;
+        opacity: 1;
+    }
+}
+
+/* Style pour les liens normaux (non actifs) */
+.nav-link:not(.active) {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.nav-link:not(.active):hover {
+    color: #FFD700;
+    transform: translateY(-1px);
+}
+.dropdown-item{
+    text-decoration: none;
+    color: rgba(104, 2, 2, 0.9);
+    font-weight: 500;
+    transition: color 0.3s, text-decoration 1s, font-weight 0.3s, font-size 0.3s;
+    gap: 10px;
+}
+.btn-cta2{
+    padding: 20px 18px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px; /* Bouton bien arrondi (style moderne) */
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease;
+    margin-left: 30px;
+    margin-bottom: 5px;
+    margin-top: 0px;
+}

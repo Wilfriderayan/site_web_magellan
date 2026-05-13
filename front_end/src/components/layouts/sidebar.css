@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+footer{
+    background: linear-gradient(135deg, rgba(115, 45, 45, 0.9) 0%, rgba(255, 85, 0, 0.95) 100%);
+    padding: 20px;
+    text-align: justify;
+}
+footer .aPropos{
+    display: flex;
+    flex-direction: column;
+    align-items: justify;
+    justify-content: justify;
+}
+footer .aPropos img{
+    width: 300px;
+    height: auto;
+    color: white;
+}
+footer .aPropos p{
+    color: white;
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: justify;
+    font-family:'palatino linotype','Poppins', sans-serif;
+}
+.footer-header{
+    display: flex;
+    flex-direction: row;
+    align-items: justify;
+    /*justify-content: center;*/
+    color: white;
+}
+.footer-header .service{
+    margin-left: 5%;
+}
+.footer-header .service ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: justify;
+    /*justify-content: center;*/
+    gap: 10px;
+}
+.footer-header .service p, .footer-header .contact p{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: justify;
+}
+.footer-header .service ul li a, .footer-header .contact a{
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+}
+.footer-header .service ul li a:hover, .footer-header .contact a:hover{
+    color: #FFD700;
+}
+.footer-header .contact a{
+    margin-top: 5px;
+}
+.footer-header .contact h4{
+    margin-top: 40px;
+    font-size: 16px;
+}
+.newsletter{
+    display: flex;
+    margin-left: -20%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+.newsletter input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: white;
+}
+.newsletter textarea{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: white;
+}
+.newsletter button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #FFD700;
+    color: black;
+    font-weight: bold;
+}
+.newsletter button:hover{
+    background: #FFC107;
+}
+.footer-bottom{
+    margin-top: 20px;
+    color: white;
+    font-size: 14px;
+    border-top: 1px solid white;
+    padding-top: 10px;
+}
+.footer-bottom p{
+    margin: 0;
+}

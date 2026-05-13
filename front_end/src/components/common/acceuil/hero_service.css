@@ -1,0 +1,118 @@
+.destinations-section {
+  padding: 100px 20px;
+  background-color: #ffffff;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  color: #2d3436;
+  margin-bottom: 10px;
+}
+
+.underline {
+  width: 80px;
+  height: 4px;
+  background: #0984e3; /* Bleu Magellan */
+  margin: 0 auto 20px;
+  border-radius: 2px;
+}
+
+.destinations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dest-card {
+  height: 450px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: transform 0.4s ease;
+}
+
+.dest-card:hover {
+  transform: translateY(-10px);
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-overlay {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent 40%, rgba(0,0,0,0.8) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 30px;
+  transition: background 0.4s ease;
+}
+
+.dest-card:hover .card-overlay {
+  background: rgba(0,0,0,0.4);
+  backdrop-filter: blur(5px); /* Effet de flou au survol */
+}
+
+.country-label {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: #0984e3;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.card-content {
+  color: white;
+}
+
+.card-content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.tags {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.tag {
+  background: rgba(255, 255, 255, 0.2);
+  font-size: 0.8rem;
+  padding: 4px 10px;
+  border-radius: 15px;
+}
+
+.btn-explore {
+  background: white;
+  color: #2d3436;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  font-weight: bold;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s ease;
+}
+
+.dest-card:hover .btn-explore {
+  opacity: 1;
+  transform: translateY(0);
+}
